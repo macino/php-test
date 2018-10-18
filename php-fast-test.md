@@ -361,48 +361,10 @@ Máme následující tabulky
 | 3| User|
 | 4| Guest|
 
-Co vypíše následující dotaz:
+Napište dotaz, aby výsledek z těchto dvou tabulek byl:
 
-```sql
-SELECT r.role, COUNT(1) as cnt
-FROM role r
-  LEFT JOIN user u ON u.role = r.id
-GROUP BY r.role
-```
-
-1. 
 | role|cnt|
 |---|---|
-| Admin|1|
-| Manager|2|
-| User|3|
-| Guest|4|
-1. 
-| role|cnt|
-|---|---|
-| Admin|Ondřej|
 | Manager|Adam, Filip|
-| User|David|
-| Guest||
-1. 
-| role|cnt|
-|---|---|
-| Admin|1|
-| Manager|2|
-| User|1|
-| Guest|0|
-1. 
-| role|cnt|
-|---|---|
-| Admin|1|
-| Manager|2|
-| User|1|
 
-(3)
-
-slozitejsi dotaz na seniora.
-
-odpoved manager ; Adam, Filip - vypsat dotaz
-
-- udelat to interaktivne
 - 
